@@ -13,11 +13,15 @@ Project CRUD: https://namakamu.com
 ## Daftar Tugas
 | Bab | Topik | Folder |
 |-----|----------------------|--------------------|
-| 01 | HTML Dasar | bab-01-nama-topik/ |
-| 02 | CSS Dasar | bab-02-nama-topik/ |
-| 10 | JavaScript | bab-10-nama-topik/ |
-| 12 | PHP Dasar | bab-12-nama-topik/ |
-| 13 | PHP Form & Input | bab-13-nama-topik/ |
-| 14 | CRUD PHP + MySQL | bab-14-nama-topik/ |
+| 02 | HTML Dasar | Meet 2 - Basics HTML/ |
+| 03 | Link Frame & Table | Meet 3 - Link, Frame, and Table/ |
+| 05 | Stylesheet | Meet 5 - Stylesheet / |
+| 06 | Flexbox | Meet 6 - Flexbox & Responsivness/ |
+| 07 | Stylesheet 2 | Meet 7 - Stylesheet 2/ |
+| 08 | Bootsrap | Meet 8 - Bootsrap/ |
+| 09 | Web Design | Meet 9 - Penerapan Design Web/ |
+| 10 | JavaScript | Meet 10 - Java Script/ |
+| 11 | PHP | Meet 11 - PHP/ |
+| 12 | CRUD PHP| Meet 12 - Crud PHP/ |
 ## Teknologi yang Digunakan
 HTML · CSS · JavaScript · PHP · MySQL · Bootstrap
