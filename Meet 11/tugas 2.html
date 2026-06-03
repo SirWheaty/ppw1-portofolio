@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator JavaScript Sederhana</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .kalkulator { background: white; padding: 20px; border-radius: 8px; max-width: 300px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        input { width: 92%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        .btn-group { display: flex; gap: 5px; margin-bottom: 15px; }
+        button { flex: 1; padding: 10px; font-size: 16px; cursor: pointer; background-color: #2980b9; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #1f618d; }
+        #hasil { font-size: 18px; font-weight: bold; color: #2c3e50; margin-top: 10px; padding: 10px; background: #e8f4f8; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="kalkulator">
+    <h3>Kalkulator Dua Input</h3>
+    
+    <!-- Tempat Input Bilangan -->
+    <input type="number" id="bil1" placeholder="Masukkan bilangan pertama">
+    <input type="number" id="bil2" placeholder="Masukkan bilangan kedua">
+    
+    <!-- Tombol Operasi Aritmatika -->
+    <div class="btn-group">
+        <button onclick="hitung('tambah')">+</button>
+        <button onclick="hitung('kurang')">-</button>
+        <button onclick="hitung('kali')">×</button>
+        <button onclick="hitung('bagi')">÷</button>
+    </div>
+    
+    <!-- Output Hasil -->
+    <div id="hasil">Hasil: -</div>
+</div>
+
+<script>
+function hitung(operasi) {
+    // 1. Mengambil nilai dari input HTML dan mengubahnya menjadi angka (Float)
+    let angka1 = parseFloat(document.getElementById('bil1').value);
+    let angka2 = parseFloat(document.getElementById('bil2').value);
+    let hasil = 0;
+
+    // Validasi jika inputan kosong atau bukan angka
+    if (isNaN(angka1) || !isNaN(angka2) === false) {
+        document.getElementById('hasil').innerText = "Format salah / Belum diisi!";
+        return;
+    }
+
+    // 2. Logika Percabangan Operasi
+    switch(operasi) {
+        case 'tambah':
+            hasil = angka1 + angka2;
+            break;
+        case 'kurang':
+            hasil = angka1 - angka2;
+            break;
+        case 'kali':
+            hasil = angka1 * angka2;
+            break;
+        case 'bagi':
+            // Validasi pembagian dengan angka 0
+            if (angka2 === 0) {
+                document.getElementById('hasil').innerText = "Tidak bisa membagi dengan 0!";
+                return;
+            }
+            hasil = angka1 / angka2;
+            break;
+    }
+
+    // 3. Menampilkan hasil ke elemen HTML dengan id="hasil"
+    document.getElementById('hasil').innerText = "Hasil: " + hasil;
+}
+</script>
+
+</body>
+</html>

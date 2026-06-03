@@ -1,0 +1,81 @@
+<fieldset>
+    <legend>Informasi Akun</legend> <label>Pilih Browser favoritmu:</label>
+    <input list="browsers" name="myBrowser">
+    
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+    </datalist>
+
+    <br><br>
+
+    <label>Pilih Smartphone:</label>
+    <select>
+        <optgroup label="Android">
+            <option value="samsung">Samsung</option> <option value="xiaomi">Xiaomi</option>
+        </optgroup>
+        <optgroup label="iOS">
+            <option value="iphone">iPhone</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50"> 100 +
+        <input type="number" id="b" value="50"> =
+        <output name="x" for="a b"></output>
+    </form>
+</fieldset>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Member</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Member Klub</h2>
+    <img src="https://via.placeholder.com/60x15" alt="Banner Klub" width="20%">
+
+    <form>
+        <fieldset>
+            <legend>Data Diri</legend>
+            <img src="https://via.placeholder.com/100" alt="Foto Profil" style="float:right;">
+            
+            <p>
+                <label>Nama Lengkap:</label><br>
+                <input type="text" name="nama" placeholder="Masukkan nama...">
+            </p>
+            
+            <p>
+                <label>Posisi Bermain:</label><br>
+                <select name="posisi">
+                    <optgroup label="Pertahanan">
+                        <option>Kiper</option>
+                        <option>Bek</option>
+                    </optgroup>
+                    <optgroup label="Penyerang">
+                        <option>Gelandang</option>
+                        <option>Striker</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label>Jadwal Latihan (Datalist):</label><br>
+                <input list="jadwal" name="pilih_jadwal">
+                <datalist id="jadwal">
+                    <option value="Senin Sore">
+                    <option value="Rabu Sore">
+                    <option value="Sabtu Pagi">
+                </datalist>
+            </p>
+
+            <button type="submit">Daftar Sekarang</button>
+        </fieldset>
+    </form>
+</body>
+</html>

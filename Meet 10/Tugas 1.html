@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Eksperimen JavaScript Athar</title>
+    <!-- 1. Embed JavaScript (Ditulis di dalam tag <script>) -->
+    <script>
+        function sapaUser() {
+            console.log("Embed JS: Halo dari dalam tag script!");
+        }
+    </script>
+</head>
+<body onload="sapaUser()">
+
+    <h1>Variasi Pemanggilan JavaScript</h1>
+    
+    <!-- 2. Inline JavaScript (Ditulis langsung di atribut elemen) -->
+    <button onclick="alert('Inline JS: Tombol diklik!')">
+        Klik Saya (Inline)
+    </button>
+
+    <!-- 3. Eksternal JavaScript (Memanggil file .js terpisah) -->
+    <script src="Tugas 1.js"></script>
+</body>
+</html>
