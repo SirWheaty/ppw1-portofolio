@@ -8,8 +8,7 @@ Program Studi TRPL — Semester 2
 | Nama | Ilham Antariksa Widodo |
 | NIM | 25/561192/SV/26529 |
 | Prodi | TRPL |
-## Demo Live
-Project CRUD: https://namakamu.com
+
 ## Daftar Tugas
 | Bab | Topik | Folder |
 |-----|----------------------|--------------------|
